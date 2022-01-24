@@ -48,6 +48,56 @@ def action():
             a = str(int(value1)/25.4)
             value_2_var.set(a)
             formula_answer_var.set("Formula:- divide length by 25.4")
+            if unit1 == 'centimeter':
+        if unit2 == 'millimeter':
+            a = str(int(value1)*10)
+            value_2_var.set(a)
+            formula_answer_var.set("Formula:- Multiply length by 10")
+        elif unit2 == 'meter':
+            a = str(int(value1)/100)
+            value_2_var.set(a)
+            formula_answer_var.set("Formula:- divide length by 100")
+        elif unit2 == 'micrometer':
+            a = str(int(value1)*10000)
+            value_2_var.set(a)
+            formula_answer_var.set("Formula:- Multiply length by 10000")
+        elif unit2 == 'nanometer':
+            a = str(int(value1)*10000000)
+            value_2_var.set(a)
+            formula_answer_var.set("Formula:- Multiply length by 10000000")
+        elif unit2 == 'kilometer':
+            a = str(int(value1)*0.00001)
+            value_2_var.set(a)
+            formula_answer_var.set("Formula:- divide length by 100000")
+        elif unit2 == 'mile':
+            a = str(int(value1)/160934)
+            value_2_var.set(a)
+            formula_answer_var.set("Formula:- for an approximate result,\n divide the length value by 160934")
+        elif unit2 == 'feet':
+            a = str(int(value1)/30.48)
+            value_2_var.set(a)
+            formula_answer_var.set("Formula:- for an approximate result,\n divide the length value by 30.48")
+        elif unit2 == 'inch':
+            a = str(int(value1)/2.54)
+            value_2_var.set(a)
+            formula_answer_var.set("Formula:- divide length by 2.54")
+        if unit1 == 'meter':
+            if unit2 == 'centimeter':
+                a = str(int(value1)*100)
+                value_2_var.set(a)
+                formula_answer_var.set("Formula:- Multilply length by 100")
+            elif unit2 == 'millimeter':
+                a = str(int(value1)*1000)
+                value_2_var.set(a)
+                formula_answer_var.set("Formula:- Multiply length by 1000")
+            elif unit2 == 'micrometer':
+                a = str(int(value1)*1000000)
+                value_2_var.set(a)
+                formula_answer_var.set("Formula:- Multiply length by 1000000")
+            elif unit2 == 'nanometer':
+                a = str(int(value1)*1000000000)
+                value_2_var.set(a)
+                formula_answer_var.set("Formula:- Multiply length by 1000000000")
 
 # _____________________________________ Label Frame ____________________________________
 label_frame = tk.LabelFrame(window, background="#dfe6e9", border=0, relief=SUNKEN)
